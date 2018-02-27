@@ -1,0 +1,452 @@
+﻿/*nav bar*/
+ {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.nav-links {
+    margin-right: 5%;
+    margin-left: 50%;
+}
+
+.nav {
+    height: 60px;
+    background-color: white;
+    position: relative;
+}
+
+    .nav > .nav-header {
+        display: inline;
+    }
+
+        .nav > .nav-header > .nav-title {
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 200;
+            color: navy;
+            height: 80%;
+            margin-top: 3%;
+            margin-left: 3%;
+        }
+
+    .nav > .nav-btn {
+        display: none;
+    }
+
+    .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 18px;
+    }
+
+        .nav > .nav-links > a {
+            display: inline-block;
+            padding: 13px 10px 13px 10px;
+            text-decoration: none;
+            color: navy;
+            background-color: white;
+        }
+
+            .nav > .nav-links > a:hover {
+                background-color: cornflowerblue;
+                color: white;
+            }
+
+    .nav > #nav-check {
+        display: none;
+    }
+
+@media (max-width:1200px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+        .nav > .nav-btn > label {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 13px;
+        }
+
+            .nav > .nav-btn > label:hover {
+                background-color: cornflowerblue;
+            }
+
+            .nav > .nav-btn > label > span {
+                display: block;
+                width: 25px;
+                height: 10px;
+                border-top: 2px solid navy;
+            }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: navy;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+        .nav > .nav-links > a {
+            display: block;
+            width: 100%;
+        }
+
+    .nav > #nav-check:not(:checked) + .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked + .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+
+
+/*main background:*/
+.row1 {
+    background: url('Images/bgrnd.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*main content*/
+#name {
+    font-size: 3rem;
+    color: white;
+    margin-top: 5%;
+    font-weight: 200;
+    text-align: center;
+}
+
+p#about {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin-bottom: 30%;
+}
+/*fade in effect for about me text*/
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h1#name {
+    animation-name: fadeInOut;
+    animation-duration: 7s;
+}
+p#about {
+    animation-name: fadeInOut;
+    animation-duration: 7s;
+}
+
+
+/*headshot content*/
+.headshot-margin {
+    background-color: lightsteelblue;
+}
+img#headshot {
+    height: 30%;
+    margin-top: 5%;
+}
+.headshot {
+    background-size: cover;
+    background-image: url('Images/headshot1.jpg');
+}
+
+/*skills*/
+section.skill-text {
+    margin-top: 4%;
+}
+.skills {
+    background-color: lightsteelblue;
+}
+
+h1#header {
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: 200;
+    text-align: center;
+}
+
+p#skills-p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+
+/*project div*/
+.row3 {
+    background-image: url('images/option2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1#projects {
+    font-size: 2rem;
+    color: navy;
+    font-weight: 200;
+    width: 100%;
+    /*background-color: white;*/
+    margin-top: 5%;
+    margin-bottom: 0;
+    text-align: center;
+    /*text-shadow:*/
+}
+
+a.prolink {
+    color: navy;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    a.prolink:hover {
+        color: cornflowerblue;
+        background-color: navy;
+    }
+
+img#project-1 {
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+img#project-2 {
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+img#project-3 {
+    height: 70%;
+    width: 70%;
+    margin-left: 60%;
+   
+    margin-bottom: 10%
+}
+
+/*contact div*/
+.row4{
+    background-color: lightsteelblue;
+}
+h1#contact-header {
+    font-size: 2rem;
+    margin-top: 4%;
+    color: navy;
+    font-weight: 200;
+    text-align: center;
+}
+
+p#contact-info {
+    margin-top: 1%;
+    margin-bottom: 1%;
+   text-align: center;
+    font-weight: 200;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a#contact-info {
+    color: navy;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    a#contact-info:hover {
+        color: cornflowerblue;
+        background-color: navy;
+    }
+
+i.fab-fa-linkedin-in {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+/*footer*/
+.row5 {
+    background: url('images/bgrnd.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1#footer {
+    color: white;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 18%;
+}
+
+
+
+/*project1 overlay:*/
+.pro1overlay {
+    position: relative;
+    width: 50%;
+}
+
+.pro1 {
+    display: block;
+    width: 70%;
+    height: 70%;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    width: 70%;
+    opacity: 0;
+    transition: .9s ease;
+    background-color: lightsteelblue;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+}
+
+.pro1overlay:hover .overlay1 {
+    opacity: .9;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 10%
+}
+
+.text {
+    color: navy;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+
+
+/*project 2 overlay:*/
+.pro2overlay {
+    position: relative;
+    width: 50%;
+}
+
+.pro2 {
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    width: 70%;
+    opacity: 0;
+    transition: .9s ease;
+    background-color: lightsteelblue;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+}
+
+.pro2overlay:hover .overlay2 {
+    opacity: .9;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+}
+
+.text {
+    color: navy;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+
+
+/*project 3 overlay:*/
+.pro3overlay {
+    position: relative;
+    width: 50%;
+}
+
+.pro3 {
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    width: 70%;
+    opacity: 0;
+    transition: .9s ease;
+    background-color: lightsteelblue;
+    margin-bottom: 10%;
+    margin-left: 60%;
+}
+
+.pro3overlay:hover .overlay3 {
+    opacity: .9;
+    margin-bottom: 10%;
+    margin-left: 60%;
+}
+
+.text {
+    color: navy;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}

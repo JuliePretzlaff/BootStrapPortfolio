@@ -3,6 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
@@ -67,7 +73,7 @@
     </div>
 
     <div class="row row2">
-        <div class="col-1 headshot-margin">
+        <div class="col-1 sm headshot-margin">
         </div>
         <div class="col-3 headshot">
             <!--<img id="headshot" src="images/headshot1.jpg" />-->
@@ -101,7 +107,7 @@
     <div class="row row3">
         <a id="projects-tab"></a>
         <!--<div class="col-2">
-        </div>-->
+    </div>-->
         <!--<div class="col">-->
         <h1 id="projects">
             Featured Projects
@@ -147,6 +153,15 @@
                 </div>
             </div>
         </div>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "JuliePretzlaff");
+        </script>
+
     </div>
     <!--<div class="col-2">
     </div>-->

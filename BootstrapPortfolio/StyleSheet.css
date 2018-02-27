@@ -1,14 +1,17 @@
 ﻿
-img#logo{
+img#logo {
     width: 60%;
     margin: 2%;
 }
+
 .navbar {
     background-color: white;
 }
-ul.nav.navbar-nav.navbar-right{
+
+ul.nav.navbar-nav.navbar-right {
     color: navy;
 }
+
 .navbar-default {
     background-color: white;
     color: navy;
@@ -17,49 +20,61 @@ ul.nav.navbar-nav.navbar-right{
 .collapse {
     display: inline;
 }
-a.link{
-    margin-left: 5%;
 
+a.link {
+    margin-left: 5%;
 }
 
-    .navbar-default .navbar-brand,
-    .navbar-default .navbar-brand:hover,
-    .navbar-default .navbar-brand:focus,
-    .navbar-default .navbar-nav > li > a {
-        color: navy;
-      
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a {
+    color: navy;
+}
+
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        background-color: cornflowerblue;
+        color: white;
+        text-decoration: none;
     }
 
-        .navbar-default .navbar-nav > li > a:hover,
-        .navbar-default .navbar-nav > li > a:focus {
-            background-color: cornflowerblue;
-            color: white;
-            text-decoration: none;
-        }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+}
 
-    .navbar-default .navbar-toggle:hover,
-    .navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+    .navbar-default .navbar-toggle .icon-bar {
         background-color: white;
     }
-
-    .navbar-default .navbar-toggle {
-        border-color: white;
-    }
-
-        .navbar-default .navbar-toggle .icon-bar {
-            background-color: white;
-        }
 
 
 
 /*main background:*/
 .row1 {
-    background: url('Images/bgrnd.jpg') no-repeat center center;
+    background: url('Images/bgrnd.jpg') no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-position: 100% top;
 }
+
+@media (max-width:500px) {
+    .row1 {
+        background: url('Images/bgrnd.jpg') no-repeat center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% top;
+    }
+    .row5{
+        background-color: navy;
+    }
+}
+
 
 /*main content*/
 #name {
@@ -95,6 +110,7 @@ h1#name {
     animation-name: fadeInOut;
     animation-duration: 7s;
 }
+
 p#about {
     animation-name: fadeInOut;
     animation-duration: 7s;
@@ -105,10 +121,12 @@ p#about {
 .headshot-margin {
     background-color: lightsteelblue;
 }
+
 img#headshot {
     height: 30%;
     margin-top: 5%;
 }
+
 .headshot {
     background-size: cover;
     background-image: url('Images/headshot1.jpg');
@@ -118,6 +136,7 @@ img#headshot {
 section.skill-text {
     margin-top: 4%;
 }
+
 .skills {
     background-color: lightsteelblue;
 }
@@ -161,6 +180,7 @@ h1#projects {
     text-align: center;
     text-shadow: 1px 1px navy;
 }
+
 p#directions {
     font-size: 1.5rem;
     color: white;
@@ -207,14 +227,18 @@ img#project-3 {
     height: 70%;
     width: 70%;
     margin-left: 65%;
-   
     margin-bottom: 10%
+}
+.calendar{
+    background-color: lightsteelblue;
+    margin-bottom: 5%;
 }
 
 /*contact div*/
-.row4{
+.row4 {
     background-color: lightsteelblue;
 }
+
 h1#contact-header {
     font-size: 2.5rem;
     margin-top: 4%;
@@ -245,12 +269,13 @@ i.fab-fa-linkedin-in {
 }
 /*footer*/
 .row5 {
-    background: url('Images/bgrnd.jpg') no-repeat center center fixed;
+    background: url('images/bgrnd.jpg') no-repeat center center fixed;
     /*background: url('images/bgrnd2.jpg') no-repeat center center fixed;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 h1#footer {
     color: white;
     font-weight: 200;

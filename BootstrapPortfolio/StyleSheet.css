@@ -78,7 +78,10 @@ a.link {
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-
+    .headshot {
+    background-size: cover;
+    background-image: url('Images/headshot1.jpg');
+}
 }
 
 
@@ -228,7 +231,7 @@ img#project-1 {
     width: 70%;
     margin-left: 15%;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 img#project-2 {
@@ -236,14 +239,14 @@ img#project-2 {
     width: 70%;
     margin-left: 15%;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 img#project-3 {
     height: 70%;
     width: 70%;
     margin-left: 65%;
-    margin-bottom: 10%
+    margin-bottom: 5%;
 }
 
 .calendar {
@@ -328,14 +331,14 @@ h1#footer {
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 15%;
 }
 
 .pro1overlay:hover .overlay1 {
     opacity: .9;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 15%;
     margin-bottom: 10%
 }
@@ -376,14 +379,14 @@ div.text {
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 15%;
 }
 
 .pro2overlay:hover .overlay2 {
     opacity: .9;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 15%;
 }
@@ -424,13 +427,13 @@ div.text {
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-left: 65%;
 }
 
 .pro3overlay:hover .overlay3 {
     opacity: .9;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-left: 65%;
 }
 

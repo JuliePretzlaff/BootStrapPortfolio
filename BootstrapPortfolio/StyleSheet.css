@@ -56,23 +56,29 @@ a.link {
 
 /*main background:*/
 .row1 {
-    background: url('Images/bgrnd.jpg') no-repeat center center fixed;
+    background: url('Images/bgrnd.jpg') no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-position: 100% top;
 }
 
-@media (max-width:500px) {
+@media only screen and (orientation: landscape) {
     .row1 {
-        background: url('Images/bgrnd.jpg') no-repeat center center;
+        background: url('Images/bgrnd.jpg') no-repeat center center fixed;
         background-size: cover;
         background-repeat: no-repeat;
+        /*background-attachment: fixed;*/
         background-position: 100% top;
     }
-    .row5{
-        background-color: navy;
+
+    .row5 {
+        background: url('images/bgrnd.jpg') no-repeat center center fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
+
 }
 
 
@@ -180,6 +186,17 @@ h1#projects {
     text-align: center;
     text-shadow: 1px 1px navy;
 }
+h1#github {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 300;
+    width: 100%;
+    /*background-color: white;*/
+    margin-top: 15%;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 1px 1px navy;
+}
 
 p#directions {
     font-size: 1.5rem;
@@ -229,9 +246,11 @@ img#project-3 {
     margin-left: 65%;
     margin-bottom: 10%
 }
-.calendar{
+
+.calendar {
     background-color: lightsteelblue;
     margin-bottom: 5%;
+    width: 70%;
 }
 
 /*contact div*/
@@ -269,11 +288,12 @@ i.fab-fa-linkedin-in {
 }
 /*footer*/
 .row5 {
-    background: url('images/bgrnd.jpg') no-repeat center center fixed;
-    /*background: url('images/bgrnd2.jpg') no-repeat center center fixed;*/
-    background-size: cover;
+    /*background: url('images/bgrnd.jpg') no-repeat center center fixed;*/
+    background-image: url('images/bgrnd2.jpg');
+    /*background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    /*background-color: navy;*/
 }
 
 h1#footer {
@@ -281,7 +301,7 @@ h1#footer {
     font-weight: 200;
     font-size: 1rem;
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 18%;
 }
 
 

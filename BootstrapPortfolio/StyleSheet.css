@@ -221,7 +221,7 @@ h1#projects {
     margin-top: 5%;
     margin-bottom: 0;
     text-align: center;
-    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px navy;
 
 }
 p#directions {
@@ -230,16 +230,19 @@ p#directions {
     font-weight: 200;
     text-align: center;
     width: 100%;
-    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px navy;
 }
 
 #pro-title {
-    color: white;
-    text-shadow: 2px 2px navy;
+    color: navy;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
 }
 
 a.prolink {
     color: navy;
+    /*text-shadow: 1px 1px navy;*/
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -267,7 +270,7 @@ img#project-2 {
 img#project-3 {
     height: 70%;
     width: 70%;
-    margin-left: 60%;
+    margin-left: 65%;
    
     margin-bottom: 10%
 }
@@ -359,9 +362,9 @@ h1#footer {
     margin-bottom: 10%
 }
 
-.text {
-    color: navy;
-    font-size: 20px;
+div.text {
+    color: darkslategray;
+    font-size: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -407,9 +410,9 @@ h1#footer {
     margin-left: 15%;
 }
 
-.text {
-    color: navy;
-    font-size: 20px;
+div.text {
+    color: darkslategray;
+    font-size: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -444,18 +447,18 @@ h1#footer {
     transition: .9s ease;
     background-color: lightsteelblue;
     margin-bottom: 10%;
-    margin-left: 60%;
+    margin-left: 65%;
 }
 
 .pro3overlay:hover .overlay3 {
     opacity: .9;
     margin-bottom: 10%;
-    margin-left: 60%;
+    margin-left: 65%;
 }
 
-.text {
-    color: navy;
-    font-size: 20px;
+div.text {
+    color: darkslategray;
+    font-size: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;

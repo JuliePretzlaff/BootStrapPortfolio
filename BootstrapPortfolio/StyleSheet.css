@@ -214,14 +214,28 @@ p#skills-p {
 
 h1#projects {
     font-size: 2rem;
-    color: navy;
+    color: white;
     font-weight: 200;
     width: 100%;
     /*background-color: white;*/
     margin-top: 5%;
     margin-bottom: 0;
     text-align: center;
-    /*text-shadow:*/
+    text-shadow: 2px 2px navy;
+
+}
+p#directions {
+    font-size: 1rem;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px navy;
+}
+
+#pro-title {
+    color: white;
+    text-shadow: 2px 2px navy;
 }
 
 a.prolink {
